@@ -5,7 +5,7 @@ import { LinkPreview } from '../ui/link-preview';
 
 const AboutMe = () => {
     return (
-        <div>
+        <div id="education">
             <div data-aos="fade-up">
                 <div className="relative duration-300 hover:scale-101">
                     <span className="absolute top-0 left-0 w-6 h-6 border-t-1 border-l-1 border-foreground"></span>

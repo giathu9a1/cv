@@ -20,7 +20,7 @@ const Header = () => {
 
     const menu = (
         <>
-            <a href="/" className="nav-item">
+            <a href="#education" className="nav-item">
                 Education
             </a>
             <a href="#skills" className="nav-item">

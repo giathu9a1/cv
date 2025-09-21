@@ -1,4 +1,3 @@
-import React from 'react';
 import { ctu } from '~/assets/images';
 
 const Education = () => {

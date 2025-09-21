@@ -1,8 +1,6 @@
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa6';
 import { MdOutlineMail } from 'react-icons/md';
 import SignupFormDemo from '~/components/signup-form-demo';
-import { ShootingStars } from '~/components/ui/shooting-stars';
-import { StarsBackground } from '~/components/ui/stars-background';
 import { SiGmail } from 'react-icons/si';
 
 const ContactPage = () => {

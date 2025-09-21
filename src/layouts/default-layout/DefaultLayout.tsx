@@ -3,6 +3,7 @@ import Header from '../components/header/Header';
 import { ShootingStars } from '~/components/ui/shooting-stars';
 import { StarsBackground } from '~/components/ui/stars-background';
 import Footer from '../components/footer/Footer';
+import ButtonContact from '~/components/button-contact/ButtonContact';
 
 const DefaultLayout = ({ children }: { children: ReactNode }) => {
     return (
@@ -16,6 +17,7 @@ const DefaultLayout = ({ children }: { children: ReactNode }) => {
                 <ShootingStars />
                 <StarsBackground />
             </div>
+            <ButtonContact />
         </>
     );
 };

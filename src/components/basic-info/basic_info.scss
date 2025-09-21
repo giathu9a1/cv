@@ -1,0 +1,10 @@
+.img-logo {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(43%) saturate(84%) hue-rotate(169deg) brightness(87%)
+        contrast(85%);
+}
+
+.img-inf {
+    &:hover {
+        animation: imgInf 1s ease-in-out;
+    }
+}

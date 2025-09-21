@@ -1,0 +1,41 @@
+.button-theme {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgb(211, 211, 211);
+    position: relative;
+    cursor: pointer;
+
+    .icon {
+        z-index: 1;
+    }
+
+    .them {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        height: 31px;
+        width: 31px;
+        border-radius: 50%;
+        left: 2px;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out;
+
+        &.dark-select {
+            transform: translateX(calc(100% + 4px));
+        }
+    }
+
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     width: 66px;
+    //     height: 31px;
+    //     left: 2px;
+    //     top: 2px;
+    //     background-color: rgb(239, 239, 239);
+    //     border-radius: 20px;
+    // }
+}

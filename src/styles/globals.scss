@@ -1,0 +1,87 @@
+@use './mixins' as *;
+@use './variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    // font-size: 100%;
+    // -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    // font-family: 'Lexend', sans-serif;
+    // font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    // line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-variation-settings: 'wdth' 100;
+    font-weight: 300;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+ul {
+    margin-bottom: 0 !important;
+    // line-height: 1.5 !important;
+}
+
+.container {
+    @include container;
+}
+
+hr {
+    border-top-color: var(--border);
+}
+
+.motion {
+    animation: fadeIn;
+    animation-duration: 0.5s;
+}
+
+// h1 {
+//     font-size: clamp(22px, 3vw, 34px);
+// }
+.swiper {
+    width: 370px;
+    height: 220px;
+
+    img {
+        width: 370px;
+        height: 220px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1280px) {
+    .swiper {
+        width: 300px;
+        height: 160px;
+
+        img {
+            width: 300px;
+            height: 160px;
+        }
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}

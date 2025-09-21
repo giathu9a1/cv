@@ -1,0 +1,31 @@
+.blob {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    position: relative;
+    // animation: blob 8s ease-in-out infinite;
+
+    ::after {
+        border: 1px solid #ffffff;
+        background: transparent;
+        border-radius: 30% 20% 60% 50% / 20% 50% 30% 10%;
+        position: absolute;
+        inset: 0;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@keyframes blob {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}

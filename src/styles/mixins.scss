@@ -1,0 +1,48 @@
+@use 'sass:map';
+@use './variables' as *;
+
+@mixin respond-between($from, $to: null) {
+    $breakpoints: (
+        0: 0px,
+        sm: 640px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px,
+        2xl: 1536px,
+    );
+
+    @if $to == null {
+        // fallback: chỉ min-width
+        @if map.has-key($breakpoints, $from) {
+            @media (min-width: map.get($breakpoints, $from)) {
+                @content;
+            }
+        }
+    } @else {
+        // between min & max
+        @if map.has-key($breakpoints, $from) and map.has-key($breakpoints, $to) {
+            @media (min-width: map.get($breakpoints, $from)) and (max-width: calc(map.get($breakpoints, $to) - 1px)) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 20px;
+
+    @include respond-between(0, md) {
+        max-width: $container-width-mobile;
+    }
+
+    @include respond-between(md, lg) {
+        max-width: $container-width-tablet;
+    }
+
+    @include respond-between(lg) {
+        max-width: $container-width-desktop;
+    }
+}

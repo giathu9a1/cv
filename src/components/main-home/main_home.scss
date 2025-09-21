@@ -1,0 +1,99 @@
+@use '../../styles/mixins.scss' as *;
+
+.main-home {
+    .name {
+        animation: nameHome 0.8s ease-in-out;
+    }
+
+    @keyframes nameHome {
+        0% {
+            opacity: 0;
+            transform: translateY(80%);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(80%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fe {
+        animation: feHome 0.8s ease-in-out;
+    }
+
+    @keyframes feHome {
+        0% {
+            opacity: 0;
+            transform: translateY(-80%);
+        }
+        50% {
+            opacity: 0;
+            transform: translateY(-80%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .line {
+        height: 3px;
+        width: 600px;
+        background-color: var(--foreground);
+        animation: lineHome 1s ease-in-out forwards;
+    }
+
+    @keyframes lineHome {
+        0% {
+            transform: scaleX(0);
+        }
+        40% {
+            transform: scaleX(1);
+        }
+        60% {
+            transform: scaleX(1);
+        }
+        100% {
+            transform: scaleX(0);
+        }
+    }
+
+    .mouse {
+        div {
+            animation: mouse 0.5s ease-in-out infinite alternate;
+
+            @keyframes mouse {
+                0% {
+                    transform: translateY(0);
+                }
+                100% {
+                    transform: translateY(-3px);
+                }
+            }
+        }
+    }
+
+    @include respond-between(sm, md) {
+        .line {
+            // height: 2px;
+            width: 500px;
+        }
+    }
+
+    @include respond-between(0, sm) {
+        .line {
+            height: 2px;
+            width: 100%;
+        }
+    }
+
+    // @media (max-width: 1023px) {
+    //     .line {
+    //         height: 2px;
+    //         width: 400px;
+    //     }
+    // }
+}

@@ -5,7 +5,7 @@ type ThemeType = 'light' | 'dark';
 const themeSlice = createSlice({
     name: 'theme',
     initialState: {
-        iconTheme: 'light' as ThemeType,
+        iconTheme: 'dark' as ThemeType,
     },
     reducers: {
         updateIconTheme: (state, action) => {

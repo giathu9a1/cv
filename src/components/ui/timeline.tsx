@@ -57,7 +57,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                             >
                                 <img src={item.logo} alt="" />
                             </div>
-                            <h3 className="font-bold text-neutral-500 dark:text-neutral-500 text-2xl">
+                            <h3 className="font-bold text-neutral-500 dark:text-neutral-500 text-xl sm:text-2xl">
                                 {item.company}
                             </h3>
                             <p className="text-[var(--primary-color)]">{item.time}</p>

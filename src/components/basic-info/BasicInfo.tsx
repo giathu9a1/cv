@@ -37,14 +37,14 @@ const BasicInfo = () => {
         <div id="skills">
             <div className="flex gap-5 max-md:justify-center">
                 <div className="w-4/7 max-md:hidden"></div>
-                <h2 data-aos="zoom-in" className="text-5xl font-semibold">
+                <h2 data-aos="zoom-in" className="text-3xl sm:text-4xl md:text-5xl font-semibold">
                     What I do
                 </h2>
             </div>
             <div className="flex gap-10 mt-5 max-md:flex-col">
                 <div className="w-4/7 space-y-10 max-md:w-full">
                     <div data-aos="fade-up">
-                        <h3 className="text-xl font-semibold">DEVELOP</h3>
+                        <h3 className="text-xl sm:text-2xl font-semibold">DEVELOP</h3>
                         <p className="max-w-lg max-full mt-2">
                             I have studied and worked with React.js and Next.js, along with modern UI libraries such as
                             Tailwind CSS, Shadcn, and Ant Design.
@@ -62,7 +62,7 @@ const BasicInfo = () => {
                         </div>
                     </div>
                     <div data-aos="fade-up">
-                        <h3 className="text-xl font-semibold uppercase">design tool</h3>
+                        <h3 className="text-xl sm:text-2xl font-semibold uppercase">design tool</h3>
                         <p className="max-w-lg max-full mt-2">
                             I have basic knowledge of Figma and Canva. In particular, I have experience working with
                             Figma on real projects.

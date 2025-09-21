@@ -76,7 +76,7 @@
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
     --border-item: oklch(23.503% 0.00003 271.152);
-    --primary-color: oklch(62.789% 0.14306 241.117);
+    --primary-color: #1091d6;
     --shadow-img: rgba(0, 0, 0, 0.01) 0px 520px 146px 0px, rgba(0, 0, 0, 0.04) 0px 333px 133px 0px,
         rgba(0, 0, 0, 0.26) 0px 83px 83px 0px, rgba(0, 0, 0, 0.29) 0px 21px 46px 0px;
 }

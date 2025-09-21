@@ -11,6 +11,7 @@ import 'yet-another-react-lightbox/styles.css';
 import { EffectCards } from 'swiper/modules';
 import { IoCalendarOutline } from 'react-icons/io5';
 import { LuExternalLink } from 'react-icons/lu';
+import { TbWorld } from 'react-icons/tb';
 
 export const StickyScroll = ({
     content,
@@ -24,6 +25,8 @@ export const StickyScroll = ({
         imgs: string[];
         tech: string[];
         gits: string[];
+        link?: string;
+        size: string;
     }[];
     contentClassName?: string;
 }) => {
@@ -91,7 +94,7 @@ export const StickyScroll = ({
                                             animate={{
                                                 opacity: activeCard === index ? 1 : 0.3,
                                             }}
-                                            className="text-2xl font-bold"
+                                            className="text-xl sm:text-2xl font-bold"
                                         >
                                             {item.title}
                                         </motion.h2>
@@ -104,6 +107,17 @@ export const StickyScroll = ({
                                             <IoCalendarOutline />
                                             <span>{item.time}</span>
                                         </motion.div>
+                                        <motion.p
+                                            initial={{
+                                                opacity: 0,
+                                            }}
+                                            animate={{
+                                                opacity: activeCard === index ? 1 : 0.3,
+                                            }}
+                                            // className="text-kg mt-10 w-full"
+                                        >
+                                            Team size: {item.size}
+                                        </motion.p>
                                         <motion.p
                                             initial={{
                                                 opacity: 0,
@@ -149,6 +163,27 @@ export const StickyScroll = ({
                                                 </a>
                                             ))}
                                         </motion.div>
+                                        {item.link && (
+                                            <motion.div
+                                                initial={{
+                                                    opacity: 0,
+                                                }}
+                                                animate={{
+                                                    opacity: activeCard === index ? 1 : 0.3,
+                                                }}
+                                                className="text-kg mt-4 w-full flex gap-2 flex-wrap"
+                                            >
+                                                <a href={item.link} target="_blank">
+                                                    <div className="flex gap-2 items-center group">
+                                                        <TbWorld className="text-inherit" />
+                                                        <span className="group-hover:text-[var(--primary-color)] duration-300 break-all">
+                                                            {item.link}
+                                                        </span>
+                                                        <LuExternalLink className="opacity-0 group-hover:opacity-100 duration-300 group-hover:text-[var(--primary-color)]" />
+                                                    </div>
+                                                </a>
+                                            </motion.div>
+                                        )}
                                     </div>
                                 ))}
                                 <div className="h-40" />

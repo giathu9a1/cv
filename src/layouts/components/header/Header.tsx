@@ -4,6 +4,7 @@ import ButtonTheme from '../button-theme/ButtonTheme';
 import { Link } from 'react-router-dom';
 import { VscListSelection } from 'react-icons/vsc';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '~/components/ui/sheet';
+import { logo } from '~/assets/images';
 
 const Header = () => {
     const [isTop, setIsTop] = useState(true);
@@ -19,19 +20,16 @@ const Header = () => {
 
     const menu = (
         <>
-            <a href="#skills" className="nav-item">
-                About Me
-            </a>
             <a href="/" className="nav-item">
                 Education
             </a>
             <a href="#skills" className="nav-item">
                 Skills
             </a>
-            <a href="/" className="nav-item">
+            <a href="#experience" className="nav-item">
                 Work Experiences
             </a>
-            <a href="/" className="nav-item">
+            <a href="#projects" className="nav-item">
                 Projects
             </a>
             <Link to="/contact">
@@ -49,7 +47,9 @@ const Header = () => {
     return (
         <div className={`fixed top-0 left-0 right-0 header ${isTop ? '' : 'blur-header'}`}>
             <div className="container flex justify-between">
-                <div></div>
+                <Link to={'/'}>
+                    <img src={logo} className="h-20 w-auto" alt="" />
+                </Link>
                 <div>
                     <div className=" flex gap-8 justify-end items-center uppercase py-5 max-lg:hidden">{menu}</div>
                     <div className="lg:hidden py-5">

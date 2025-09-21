@@ -8,7 +8,6 @@ import DefaultLayout from './layouts/default-layout/DefaultLayout';
 
 function App() {
     const { theme, setTheme } = useTheme();
-    console.log('aaa');
 
     useEffect(() => {
         setTheme(theme as 'light' | 'dark');

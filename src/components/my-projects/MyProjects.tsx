@@ -3,13 +3,11 @@ import { projects } from '~/constants/data';
 
 const MyProjects = () => {
     return (
-        <div>
-            <div>
-                <h2 data-aos="fade-up" className="text-5xl font-semibold pb-10">
-                    My Projects
-                </h2>
-                <StickyScroll content={projects} />
-            </div>
+        <div id="projects">
+            <h2 data-aos="fade-up" className="text-3xl sm:text-4xl md:text-5xl font-semibold pb-10">
+                My Projects
+            </h2>
+            <StickyScroll content={projects} />
         </div>
     );
 };

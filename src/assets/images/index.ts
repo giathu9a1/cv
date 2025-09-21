@@ -41,3 +41,7 @@ export { default as mailer } from './mailer.png';
 export { default as reactna } from './React-native-2-logo.png';
 export { default as redis } from './redis.png';
 export { default as socket } from './socket.svg';
+export { default as ctu } from './ctu.png';
+export { default as chat1 } from './chat1.png';
+export { default as chat2 } from './chat2.png';
+export { default as logo } from './logoT.png';

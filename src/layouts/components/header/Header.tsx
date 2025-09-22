@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import './header.scss';
 import ButtonTheme from '../button-theme/ButtonTheme';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { VscListSelection } from 'react-icons/vsc';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '~/components/ui/sheet';
 import { logo } from '~/assets/images';
 
 const Header = () => {
     const [isTop, setIsTop] = useState(true);
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,20 +19,45 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+        e.preventDefault();
+        const el = document.getElementById(id);
+        if (el) {
+            const y = el.getBoundingClientRect().top + window.scrollY - 150;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    };
+
     const menu = (
         <>
-            <a href="#education" className="nav-item">
+            <Link
+                to="/#education"
+                onClick={(e) => location.pathname === '/' && handleClick(e, 'education')}
+                className="nav-item"
+            >
                 Education
-            </a>
-            <a href="#skills" className="nav-item">
+            </Link>
+            <Link
+                to="/#skills"
+                onClick={(e) => location.pathname === '/' && handleClick(e, 'skills')}
+                className="nav-item"
+            >
                 Skills
-            </a>
-            <a href="#experience" className="nav-item">
+            </Link>
+            <Link
+                to="/#experience"
+                onClick={(e) => location.pathname === '/' && handleClick(e, 'experience')}
+                className="nav-item"
+            >
                 Work Experiences
-            </a>
-            <a href="#projects" className="nav-item">
+            </Link>
+            <Link
+                to="/#projects"
+                onClick={(e) => location.pathname === '/' && handleClick(e, 'projects')}
+                className="nav-item"
+            >
                 Projects
-            </a>
+            </Link>
             <Link to="/contact">
                 <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none duration-300 hover:shadow-[0_0_10px_var(--primary-color)]">
                     <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,var(--primary-color)_0%,#d4f0ff_50%,var(--primary-color)_100%)]" />

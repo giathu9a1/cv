@@ -9,8 +9,10 @@ const ContactPage = () => {
     return (
         <div>
             <div className="py-30 container z-100">
-                <h1 className="text-6xl font-extrabold text-center">Get In Touch</h1>
-                <div className="flex sm:px-10 md:px-30 mt-17 max-lg:flex-col gap-10">
+                <h1 data-aos="zoom-in" className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-center">
+                    Get In Touch
+                </h1>
+                <div data-aos="fade-up" className="flex sm:px-10 md:px-30 mt-17 max-lg:flex-col gap-10">
                     <div className="flex-1">
                         <h2 className="text-2xl font-bold text-neutral-800 dark:text-neutral-200">
                             Contact Information
@@ -36,7 +38,7 @@ const ContactPage = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="flex-1">
+                    <div data-aos="fade-up" className="flex-1">
                         <SignupFormDemo />
                     </div>
                 </div>

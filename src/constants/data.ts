@@ -19,7 +19,7 @@ import {
     luanvan8,
     mailer,
     mongo,
-    next,
+    // next
     nienluan1,
     nienluan2,
     nienluan3,
@@ -50,9 +50,13 @@ export const lib = [
         name: 'Reactjs',
     },
     {
-        img: next,
-        name: 'Nextjs',
+        img: react,
+        name: 'React Native',
     },
+    // {
+    //     img: next,
+    //     name: 'Nextjs',
+    // },
     {
         img: scss,
         name: 'SCSS',
@@ -115,7 +119,7 @@ including international customers.</p>
 </ul>`,
     },
     {
-        time: '03/2025 - Present',
+        time: '03/2025 - 09/2025',
         company: 'Web Designer at DK Tech',
         address: 'District Tan Phu, Ho Chi Minh City',
         logo: dktech,

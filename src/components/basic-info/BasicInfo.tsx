@@ -62,13 +62,13 @@ const BasicInfo = () => {
                         </div>
                     </div>
                     <div data-aos="fade-up">
-                        <h3 className="text-xl sm:text-2xl font-semibold uppercase">design tool</h3>
+                        <h3 className="text-xl sm:text-2xl font-semibold uppercase">tools</h3>
                         <p className="max-w-lg max-full mt-2">
-                            I have basic knowledge of Figma and Canva. In particular, I have experience working with
-                            Figma on real projects.
+                            I have basic knowledge of Figma, Canva and Github Copilot. In particular, I have experience
+                            working with Figma and Github Copilot on real projects.
                         </p>
                         <div className="flex gap-3 mt-4 flex-wrap max-w-lg max-full">
-                            {['Figma', 'Canva'].map((item) => (
+                            {['Figma', 'Canva', 'Github Copilot'].map((item) => (
                                 <div
                                     key={item}
                                     className="flex flex-col items-center gap-2 border border-[var(--border-item)] hover:text-[var(--primary-color)] px-3 py-1 rounded-2xl duration-200 hover:border-[var(--primary-color)] hover:shadow-[0_0_5px_var(--primary-color)] hover:scale-102"

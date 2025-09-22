@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import useTheme from './hooks/useTheme';
 import ScrollToTop from './components/scroll-to-top/ScrollToTop';
 import DefaultLayout from './layouts/default-layout/DefaultLayout';
+import ScrollToHash from './components/scroll-to-hash/ScrollToHash';
 // import { useEffect } from 'react';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     return (
         <Router>
             <ScrollToTop />
+            <ScrollToHash />
             <Routes>
                 {publicRoutes.map((route, index) => (
                     <Route

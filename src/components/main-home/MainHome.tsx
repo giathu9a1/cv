@@ -17,9 +17,13 @@ const MainHome = () => {
                     NGUYEN BACH GIA THU
                 </h1>
                 <div className="line"></div>
-                <h2 className="text-xl fe">Front-end Developer</h2>
+                <h2 className="text-xl fe">ReactJS Developer / Tester Intern</h2>
 
                 <div onClick={scrollDown} className="cursor-pointer absolute bottom-10 left-1/2 -translate-x-1/2">
+                    <div className="relative">
+                        <div className="absolute h-10 w-px bg-[var(--foreground)] left-1/2 -translate-x-1/2 bottom-2"></div>
+                        <div className="absolute h-4 w-px rounded-full bg-[var(--primary-color)] left-1/2 -translate-x-1/2 bottom-5"></div>
+                    </div>
                     <div className="border relative rounded-xl h-10 w-7 border-[var(--foreground)] mouse">
                         <div className="h-[9px] w-[3px] bg-[var(--foreground)] rounded-full absolute top-2 left-1/2 -translate-x-1/2"></div>
                     </div>

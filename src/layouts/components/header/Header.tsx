@@ -74,7 +74,7 @@ const Header = () => {
         <div className={`fixed top-0 left-0 right-0 header ${isTop ? '' : 'blur-header'}`}>
             <div className="container flex justify-between">
                 <Link to={'/'}>
-                    <img src={logo} className="h-20 w-auto" alt="" />
+                    <img src={logo} style={{ filter: 'var(--fil-logo)' }} className="h-20 w-auto" alt="" />
                 </Link>
                 <div>
                     <div className=" flex gap-8 justify-end items-center uppercase py-5 max-lg:hidden">{menu}</div>

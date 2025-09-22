@@ -79,6 +79,8 @@
     --primary-color: #1091d6;
     --shadow-img: rgba(0, 0, 0, 0.01) 0px 520px 146px 0px, rgba(0, 0, 0, 0.04) 0px 333px 133px 0px,
         rgba(0, 0, 0, 0.26) 0px 83px 83px 0px, rgba(0, 0, 0, 0.29) 0px 21px 46px 0px;
+    --fil-logo: brightness(0) saturate(100%) invert(0%) sepia(87%) saturate(0%) hue-rotate(297deg) brightness(98%)
+        contrast(100%);
 }
 
 .dark {
@@ -117,6 +119,8 @@
     --border-item: oklch(98.212% 0.00011 271.152);
     --shadow-img: rgba(255, 255, 255, 0.01) 0px 520px 146px 0px, rgba(255, 255, 255, 0.04) 0px 333px 133px 0px,
         rgba(255, 255, 255, 0.26) 0px 30px 30px 0px, rgba(255, 255, 255, 0.29) 0px 21px 46px 0px;
+    --fil-logo: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(10%) hue-rotate(108deg) brightness(105%)
+        contrast(101%);
 }
 
 @layer base {

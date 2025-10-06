@@ -17,7 +17,7 @@ const MainHome = () => {
                     NGUYEN BACH GIA THU
                 </h1>
                 <div className="line"></div>
-                <h2 className="text-xl fe">ReactJS Developer / Tester Intern</h2>
+                <h2 className="text-xl fe">ReactJS Developer / Mobile Developer Intern / Tester Intern</h2>
 
                 <div onClick={scrollDown} className="cursor-pointer absolute bottom-10 left-1/2 -translate-x-1/2">
                     <div className="relative">

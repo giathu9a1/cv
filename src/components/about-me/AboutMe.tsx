@@ -22,7 +22,7 @@ const AboutMe = () => {
 
                             <div className="flex items-center gap-1">
                                 <CiLocationOn className="text-[var(--primary-color)]" />
-                                <span>District 3, Ho Chi Minh City</span>
+                                <span>Nhieu Loc Ward, Ho Chi Minh City</span>
                             </div>
                         </div>
                         <div className="my-5 h-[1px] w-[200px] bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" />

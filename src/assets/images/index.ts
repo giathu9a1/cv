@@ -46,3 +46,4 @@ export { default as chat1 } from './chat1.png';
 export { default as chat2 } from './chat2.png';
 export { default as logo } from './logoT.png';
 export { default as iconlogo } from './iconlogo.png';
+export { default as miquant } from './miquant.ico';

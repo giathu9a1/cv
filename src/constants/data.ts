@@ -18,6 +18,7 @@ import {
     luanvan7,
     luanvan8,
     mailer,
+    miquant,
     mongo,
     // next
     nienluan1,
@@ -103,54 +104,96 @@ export const experiences = [
     {
         time: '05/2024 - 07/2024',
         company: 'VNPT-IT',
-        address: 'My Tho City, Tien Giang Province',
+        address: 'My Phong Ward, Dong Thap Province',
         logo: vnpt,
-        content: `<p>VNPT-IT operates in the field of research and development, integrating IT products and services to serve
-both the internal needs of Vietnam Posts and Telecommunications Group (VNPT) and external clients,
-including international customers.</p>
+        content: `<p>VNPT-IT operates in the field of research and development, integrating IT products and services to serve both the internal needs
+of Vietnam Posts and Telecommunications Group (VNPT) and external clients, including international customers.</p>
 </p>The knowledge and skills I have learned and applied include:</p>
 <ul>
-    <li>Gaining insights into Spring Boot, MySQL, Microservices architecture, Angular, and more.</li>
-    <li>Designing and finalizing the user interface in Figma.</li>
+    <li> Researched and designed user interfaces in Figma based on requirements and guidance from the mentor.</li>
+    <li> Was responsible for developing APIs for user management functionalities of a Social Security application using Spring Boot.</li>
     <li>
-        Developed APIs for assigned functionalities and built the overall software interface based on the
-        previously designed Figma prototype.
+        Developed and implemented the Frontend interface using Angular based on approved Figma prototypes, ensuring
+consistency between the design and the final product.
+    </li>
+    <li>
+        Gained hands-on experience with Spring Boot, Angular, MySQL, and Microservices architecture throughout the application
+development and implementation process.
     </li>
 </ul>`,
     },
     {
         time: '03/2025 - 09/2025',
-        company: 'Web Designer at DK Tech',
-        address: 'District Tan Phu, Ho Chi Minh City',
+        company: 'DK Tech Co., Ltd.',
+        address: 'Phu Thanh Ward, Ho Chi Minh City',
         logo: dktech,
-        content: `<p>DK Tech is a company specializing in custom website design based on client requirements, with many years
-of experience and a strong focus on developing Blockchain projects.</p>
-<p>My role at the company and the knowledge I have gained include:</p>
+        content: `
 <ul>
-<li>I was directly involved in the project of designing website interfaces for clients.</li>
+<li>Developed and customized responsive web interfaces based on UI/UX designs and project requirements, ensuring
+consistency across multiple devices.</li>
 <li>
-    I participated in developing websites for the company, building interfaces, and gained additional skills in
-    website development using WordPress.
+    Used WordPress to build and customize the company’s Landing Pages, focusing on translating designs into functional
+interfaces, optimizing layouts, and ensuring a consistent user experience across devices.
 </li>
-<li>I also learned valuable teamwork skills, including the ability to listen and contribute ideas effectively.</li>
+<li>Collaborated with team members to clarify requirements, discuss implementation approaches, and propose solutions,
+contributing to the timely delivery and overall quality of projects.</li>
+</ul>`,
+    },
+    {
+        time: '03/2025 - 09/2025',
+        company: 'Miquant JSC',
+        address: 'Cho Quan Ward, Ho Chi Minh City',
+        logo: miquant,
+        content: `<ul>
+  <li>
+    Improved and updated the company’s Landing Page interface, focusing on enhancing
+    visual appeal, interactivity, and overall user experience, while ensuring responsive
+    design and consistency with the product’s UI/UX direction.
+  </li>
+
+  <li>
+    Implemented real-time market data synchronization using Socket.IO, enabling users
+    to receive continuously updated market information without manually refreshing the page,
+    while optimizing UI performance to ensure a smooth user experience for 200+ concurrent
+    users monitoring over 1,100 stock symbols.
+  </li>
+
+  <li>
+    Developed a market monitoring system that provides industry-specific insights for
+    individual stock symbols, supporting users in monitoring and analyzing market data.
+  </li>
+
+  <li>
+    Built a customizable dashboard using FlexLayout, enabling users to freely arrange,
+    resize, and manage up to 6 components while maintaining real-time data synchronization
+    across all dashboard components.
+  </li>
+
+  <li>
+    Integrated and developed interactive ECharts visualizations for financial data analysis,
+    while studying technical documentation to implement different chart types and interactions.
+  </li>
+
+  <li>
+    Optimized frontend rendering and data handling to improve responsiveness and overall
+    user experience.
+  </li>
+
+  <li>
+    Contributed to the development of the React Native mobile application, adapting web
+    features and interfaces to mobile devices while maintaining consistency in UI, workflows,
+    and user experience across platforms.
+  </li>
+
+  <li>
+    Participated in technical discussions with the Backend team to discuss implementation
+    approaches, identify issues, and propose solutions during product development.
+  </li>
 </ul>`,
     },
 ];
 
 export const projects = [
-    {
-        title: 'SILVER JEWELRY STORE WEBSITE',
-        time: '12/2023 - 04/2024',
-        size: '1 (Personal Project)',
-        description:
-            'The website supports customers in viewing detailed information about jewelry products and placing orders. They can track the status oftheir deliveries, review products, and add items to their wishlist. Administrators can manage products, categorize items, view the order list, andgenerate revenue statistics.',
-        imgs: [nienluan1, nienluan2, nienluan3, nienluan4, nienluan5],
-        tech: [react, bootstrap, redux, scss, node, mongo, mailer],
-        gits: [
-            'https://github.com/Thub2014706/backend_jewelry',
-            'https://github.com/Thub2014706/website_selling_jewelry',
-        ],
-    },
     {
         title: 'DEVELOPING A MOVIE TICKET BOOKING MANAGEMENT SYSTEM',
         time: '08/2024 - 11/2024',
@@ -164,6 +207,19 @@ export const projects = [
             ' https://github.com/Thub2014706/luanvan-fe_admin',
             ' https://github.com/Thub2014706/luanvan-fe_customer',
             ' https://github.com/Thub2014706/luanvan-native',
+        ],
+    },
+    {
+        title: 'SILVER JEWELRY STORE WEBSITE',
+        time: '12/2023 - 04/2024',
+        size: '1 (Personal Project)',
+        description:
+            'The website supports customers in viewing detailed information about jewelry products and placing orders. They can track the status oftheir deliveries, review products, and add items to their wishlist. Administrators can manage products, categorize items, view the order list, andgenerate revenue statistics.',
+        imgs: [nienluan1, nienluan2, nienluan3, nienluan4, nienluan5],
+        tech: [react, bootstrap, redux, scss, node, mongo, mailer],
+        gits: [
+            'https://github.com/Thub2014706/backend_jewelry',
+            'https://github.com/Thub2014706/website_selling_jewelry',
         ],
     },
     {

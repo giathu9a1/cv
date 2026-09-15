@@ -115,9 +115,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                                 {item.company}
                             </h3>
 
-                            {/* <p className="text-[var(--primary-color)]">
+                            <p className="text-[var(--primary-color)]">
                                 {item.time}
-                            </p> */}
+                            </p>
 
                             <p>{item.address}</p>
                         </div>

@@ -140,7 +140,7 @@ contributing to the timely delivery and overall quality of projects.</li>
 </ul>`,
     },
     {
-        time: '03/2025 - 09/2025',
+        time: '09/2025 - 08/2026',
         company: 'Miquant JSC',
         address: 'Cho Quan Ward, Ho Chi Minh City',
         logo: miquant,
